@@ -1,0 +1,84 @@
+.header {
+  background-color: #cbd5e1;
+  padding: 10px;
+}
+
+.app-container {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.website-logo {
+  height: 40px;
+}
+.select {
+  width: 250px;
+  height: 30px;
+  margin-left: 42px;
+  border-radius: 5px;
+}
+.list-card {
+  list-style: none;
+  background-color: #ffffff;
+  padding-bottom: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px #e0e6e9;
+  padding: 18x;
+}
+.image {
+  width: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.paragraph {
+  text-align: center;
+  font-size: 14px;
+  color: #475569;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.un-order-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.failure-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-image {
+  height: 200px;
+}
+.heading {
+  font-size: 32px;
+  color: #475569;
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+.button {
+  color: #ffffff;
+  background-color: #328af2;
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
