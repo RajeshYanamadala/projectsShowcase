@@ -27,11 +27,12 @@ class ProjectShowcase extends Component {
   }
 
   componentDidMount() {
+    const {category} = this.state
     // setTimeout(() => {
     //   this.renderCategoryListItems()
     // }, 1500)
     // this.setState({apiStatus: apiStatusContext.in_process})
-    this.renderCategoryListItems()
+    this.renderCategoryListItems(category)
   }
 
   onChangeSelectOption = event => {
@@ -40,11 +41,13 @@ class ProjectShowcase extends Component {
     //   this.setState({category: selectValue}, this.renderCategoryListItems)
     // }, 1500)
     // this.setState({apiStatus: apiStatusContext.in_process})
-    this.setState({category: selectValue}, this.renderCategoryListItems)
+    this.setState({category: selectValue}, () => {
+      this.renderCategoryListItems(selectValue)
+    })
   }
 
-  renderCategoryListItems = async () => {
-    const {category} = this.state
+  renderCategoryListItems = async category => {
+    // const {category} = this.state
     console.log(category)
     const projectsApiUrl = `https://apis.ccbp.in/ps/projects?category=${category}`
     const options = {
